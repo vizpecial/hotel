@@ -1,5 +1,5 @@
 # Stage 1: Build the app using Maven
-FROM eclipse-temurin:17-jdk-alpine AS build
+FROM eclipse-temurin:26-jdk-alpine AS build
 WORKDIR /app
 COPY . .
 RUN chmod +x mvnw && ./mvnw clean package -DskipTests
